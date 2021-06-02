@@ -1,0 +1,14 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+一．银行内部管理系统：
+1.数据库要求：
+创建名为BankSystem的数据库，并在数据库中创建如下要求的BankEmployee表并插入三条测试数据，表属性如下：
+EmpId	int	员工ID 主键，自增长
+EmpName	varchar	员工姓名 非空
+EmpPwd		varchar	员工密码 非空
+EmpPart		varchar	员工部门 非空
+EmpSalary	int	员工薪水
+2.	项目要求：
+首先设计一个登录页面，要求登录页面主页有“欢迎使用银行员工内部管理系统”的欢迎提示。且页面有基本的HTML的展示和布局。JSP文件名为:BankLogin
+在点击登陆后，跳转到处理登陆的Servlet中，并对输入的账号密码通过数据库进行判断是否登录成功。Servlet命名为：EmpLogin
+在登陆成功之后跳转到名为EmpWelcome的页面，在该页面中提供修改员工密码和部门的按钮或链接进行员工信息的修改，修改用的Servlet名为EmpModify。另外提供查询员工薪水和部门的按钮或链接进行员工信息的查询。
